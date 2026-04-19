@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mérida, Yucatán</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Carrusel */
+        .carrusel {
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .carrusel img {
+            width: 100%;
+            display: none;
+        }
+
+        .carrusel img.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mérida, Yucatán</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#info">Información</a>
+        <a href="#lugares">Lugares</a>
+        <a href="#gastronomia">Gastronomía</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="inicio">
+    <h2>Inicio</h2>
+    <p>
+    Mérida, la capital del estado de Yucatán, es una ciudad llena de historia, cultura y tradiciones. 
+    Fundada en 1542 sobre la antigua ciudad maya de T'Hó, conserva un gran encanto colonial.
+    </p>
+    <img src="img/merida1.jpg">
+    <img src="img/merida2.jpg">
+</section>
+
+<section id="info">
+    <h2>Información</h2>
+    <article>
+        <p>
+        Mérida se ubica en el noroeste de la península de Yucatán, a 30 km del Golfo de México.
+        Es un importante centro cultural y económico con mezcla de herencia maya y española.
+        El clima es cálido, entre 20°C y 35°C.
+        </p>
+    </article>
+    <img src="img/info1.jpg">
+    <img src="img/info2.jpg">
+</section>
+
+<section id="lugares">
+    <h2>Lugares turísticos</h2>
+
+    <article>
+        <h3>Paseo de Montejo</h3>
+        <p>Avenida emblemática con mansiones coloniales y edificios históricos.</p>
+        <img src="img/montejo1.jpg">
+        <img src="img/montejo2.jpg">
+    </article>
+
+    <article>
+        <h3>Plaza Grande</h3>
+        <p>Centro de la ciudad con la Catedral y el Palacio de Gobierno.</p>
+        <img src="img/plaza1.jpg">
+        <img src="img/plaza2.jpg">
+    </article>
+
+    <article>
+        <h3>Casa de Montejo</h3>
+        <p>Museo que muestra la vida en la época colonial.</p>
+        <img src="img/casa1.jpg">
+        <img src="img/casa2.jpg">
+    </article>
+
+    <article>
+        <h3>Cenotes</h3>
+        <p>Formaciones naturales de agua dulce ideales para nadar.</p>
+        <img src="img/cenote1.jpg">
+        <img src="img/cenote2.jpg">
+    </article>
+
+</section>
+
+<section id="gastronomia">
+    <h2>Gastronomía</h2>
+    <article>
+        <p>
+        La gastronomía yucateca combina sabores mayas y españoles.
+        Destacan la cochinita pibil, la sopa de lima, panuchos y salbutes.
+        </p>
+    </article>
+    <img src="img/comida1.jpg">
+    <img src="img/comida2.jpg">
+</section>
+
+<section id="galeria">
+    <h2>Galería</h2>
+
+    <div class="carrusel">
+        <img src="img/galeria1.jpg" class="active">
+        <img src="img/galeria2.jpg">
+        <img src="img/galeria3.jpg">
+        <img src="img/galeria4.jpg">
+    </div>
+
+</section>
+
+<section id="contacto">
+    <h2>Conclusión</h2>
+    <p>
+    Mérida es un destino que combina historia, cultura y gastronomía.
+    Es un lugar ideal para conocer tradiciones y disfrutar de su riqueza cultural.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>Proyecto HTML5 - 2026</p>
+</footer>
+
+<script>
+    let index = 0;
+    const slides = document.querySelectorAll(".carrusel img");
+
+    setInterval(() => {
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+    }, 3000);
+</script>
+
+</body>
+</html>
