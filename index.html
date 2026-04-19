@@ -1,35 +1,28 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Mérida, Yucatán</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- RESPONSIVE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Carrusel */
-        .carrusel {
-            width: 100%;
-            max-width: 500px;
-            margin: auto;
-            overflow: hidden;
-        }
 
-        .carrusel img {
-            width: 100%;
-            display: none;
-        }
+    <!-- TIPOGRAFÍA -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Pacifico&display=swap" rel="stylesheet">
 
-        .carrusel img.active {
-            display: block;
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
 <header>
     <h1>Mérida, Yucatán</h1>
-    <nav>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <nav id="nav">
         <a href="#inicio">Inicio</a>
         <a href="#info">Información</a>
         <a href="#lugares">Lugares</a>
@@ -41,75 +34,91 @@
 
 <main>
 
-<section id="inicio">
+<!-- 🌺 BORDE DECORATIVO -->
+<div class="decoracion"></div>
+
+<section id="inicio" class="animar">
     <h2>Inicio</h2>
     <p>
     Mérida, la capital del estado de Yucatán, es una ciudad llena de historia, cultura y tradiciones. 
     Fundada en 1542 sobre la antigua ciudad maya de T'Hó, conserva un gran encanto colonial.
     </p>
-    <img src="img/merida1.jpg">
-    <img src="img/merida2.jpg">
+
+    <div class="imagenes">
+        <img src="img/merida1.jpg">
+        <img src="img/merida2.jpg">
+    </div>
 </section>
 
-<section id="info">
+<section id="info" class="animar">
     <h2>Información</h2>
-    <article>
-        <p>
-        Mérida se ubica en el noroeste de la península de Yucatán, a 30 km del Golfo de México.
-        Es un importante centro cultural y económico con mezcla de herencia maya y española.
-        El clima es cálido, entre 20°C y 35°C.
-        </p>
-    </article>
-    <img src="img/info1.jpg">
-    <img src="img/info2.jpg">
+    <p>
+    Mérida se ubica en el noroeste de la península de Yucatán, a 30 km del Golfo de México.
+    Es un importante centro cultural y económico con mezcla de herencia maya y española.
+    El clima es cálido, entre 20°C y 35°C.
+    </p>
+
+    <div class="imagenes">
+        <img src="img/info1.jpg">
+        <img src="img/info2.jpg">
+    </div>
 </section>
 
-<section id="lugares">
+<section id="lugares" class="animar">
     <h2>Lugares turísticos</h2>
 
-    <article>
+    <article class="card">
         <h3>Paseo de Montejo</h3>
         <p>Avenida emblemática con mansiones coloniales y edificios históricos.</p>
-        <img src="img/montejo1.jpg">
-        <img src="img/montejo2.jpg">
+        <div class="imagenes">
+            <img src="img/montejo1.jpg">
+            <img src="img/montejo2.jpg">
+        </div>
     </article>
 
-    <article>
+    <article class="card">
         <h3>Plaza Grande</h3>
         <p>Centro de la ciudad con la Catedral y el Palacio de Gobierno.</p>
-        <img src="img/plaza1.jpg">
-        <img src="img/plaza2.jpg">
+        <div class="imagenes">
+            <img src="img/plaza1.jpg">
+            <img src="img/plaza2.jpg">
+        </div>
     </article>
 
-    <article>
+    <article class="card">
         <h3>Casa de Montejo</h3>
         <p>Museo que muestra la vida en la época colonial.</p>
-        <img src="img/casa1.jpg">
-        <img src="img/casa2.jpg">
+        <div class="imagenes">
+            <img src="img/casa1.jpg">
+            <img src="img/casa2.jpg">
+        </div>
     </article>
 
-    <article>
+    <article class="card">
         <h3>Cenotes</h3>
         <p>Formaciones naturales de agua dulce ideales para nadar.</p>
-        <img src="img/cenote1.jpg">
-        <img src="img/cenote2.jpg">
+        <div class="imagenes">
+            <img src="img/cenote1.jpg">
+            <img src="img/cenote2.jpg">
+        </div>
     </article>
 
 </section>
 
-<section id="gastronomia">
+<section id="gastronomia" class="animar">
     <h2>Gastronomía</h2>
-    <article>
-        <p>
-        La gastronomía yucateca combina sabores mayas y españoles.
-        Destacan la cochinita pibil, la sopa de lima, panuchos y salbutes.
-        </p>
-    </article>
-    <img src="img/comida1.jpg">
-    <img src="img/comida2.jpg">
+    <p>
+    La gastronomía yucateca combina sabores mayas y españoles.
+    Destacan la cochinita pibil, la sopa de lima, panuchos y salbutes.
+    </p>
+
+    <div class="imagenes">
+        <img src="img/comida1.jpg">
+        <img src="img/comida2.jpg">
+    </div>
 </section>
 
-<section id="galeria">
+<section id="galeria" class="animar">
     <h2>Galería</h2>
 
     <div class="carrusel">
@@ -118,10 +127,9 @@
         <img src="img/galeria3.jpg">
         <img src="img/galeria4.jpg">
     </div>
-
 </section>
 
-<section id="contacto">
+<section id="contacto" class="animar">
     <h2>Conclusión</h2>
     <p>
     Mérida es un destino que combina historia, cultura y gastronomía.
@@ -129,21 +137,48 @@
     </p>
 </section>
 
+<!-- 🌺 BORDE DECORATIVO -->
+<div class="decoracion"></div>
+
 </main>
 
 <footer>
     <p>Proyecto HTML5 - 2026</p>
 </footer>
 
+<!-- JS -->
 <script>
-    let index = 0;
-    const slides = document.querySelectorAll(".carrusel img");
+/* MENÚ HAMBURGUESA */
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav");
 
-    setInterval(() => {
-        slides[index].classList.remove("active");
-        index = (index + 1) % slides.length;
-        slides[index].classList.add("active");
-    }, 3000);
+toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+
+/* CARRUSEL */
+let index = 0;
+const slides = document.querySelectorAll(".carrusel img");
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}, 3000);
+
+/* ANIMACIÓN SCROLL */
+const elementos = document.querySelectorAll(".animar");
+
+const mostrar = () => {
+    elementos.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            el.classList.add("visible");
+        }
+    });
+};
+
+window.addEventListener("scroll", mostrar);
 </script>
 
 </body>
