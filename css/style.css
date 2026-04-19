@@ -150,3 +150,7 @@ footer {
         max-width: 90%;
     }
 }
+
+body {
+    background: red;
+}
